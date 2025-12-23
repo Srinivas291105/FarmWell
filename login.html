@@ -1,74 +1,84 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FarmWell*Login</title>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-        <br><h1 align="center">FarmWell</h1>
-        <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="bank.html">Mobile-Banking</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-        </nav>
-        <main class="auth-section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="auth-container">
+    <title>FarmWell – Demo Login (No Data Collected)</title>
 
-    <!-- LEFT : SIGN IN -->
-    <div class="auth-box">
-      <h2>Create Account</h2>
-      <p class="auth-sub">Sign in using one of the following</p>
+    <!-- 🔒 PRIVACY & GOOGLE SAFE SIGNALS -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="description" content="This is a demo login UI. FarmWell does not collect, store, or process any personal data on this page.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
 
-      <!-- EMAIL -->
-      <label>Email Address</label>
-      <input type="email" placeholder="Enter your email">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br>
+<h1 align="center">FarmWell</h1>
 
-      <!-- NAME -->
-      <label>Full Name</label>
-      <input type="text" placeholder="Enter your name">
+<nav class="navbar">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="bank.html">Mobile-Banking</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+</ul>
+</nav>
+<main class="auth-section">
+<div class="auth-container">
+<!-- CREATE ACCOUNT -->
+<div class="auth-box">
+<h2>Create Account (Demo)</h2>
+<p class="auth-sub">UI demo only</p>
 
-      <!-- MOBILE -->
-      <label>Mobile Number</label>
-      <input type="tel" placeholder="Enter mobile number">
+<label>Email Address</label>
+<input type="email" placeholder="Enter Mail ID" autocomplete="off">
 
-      <button class="primary-btn">Create Account</button>
+<label>Full Name</label>
+<input type="text" placeholder="Enter name" autocomplete="off">
 
-      <div class="divider">OR</div>
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter number" autocomplete="off">
 
-      <!-- GOOGLE SIGN IN -->
-      <button class="google-btn">
-        <span>G</span> Sign in / log in with Google
-      </button>
-    </div>
+<button class="primary-btn demo-btn">Create Account</button>
 
-    <!-- RIGHT : LOGIN -->
-    <div class="auth-box auth-right">
-      <h2>Already have an account?</h2>
-      <p>Login using your registered details</p>
+<div class="divider">DEMO ONLY</div>
 
-      <label>Email or Mobile</label>
-      <input type="text" placeholder="Email or Mobile">
+<button class="google-btn demo-btn">
+<span>G</span> Google Sign-In (Demo)
+</button>
+</div>
+<div class="auth-box auth-right">
+<h2>Login (Demo)</h2>
+<p>No authentication occurs</p>
 
-      <label>Password</label>
-      <input type="password" placeholder="Enter password">
+<label>Email or Mobile</label>
+<input type="text" placeholder="Mobile Or Mail ID" autocomplete="off">
 
-      <button class="primary-btn">Login</button>
+<label>Password</label>
+<input type="password" placeholder="pass word" autocomplete="new-password">
 
-      <p class="forgot">Forgot password?</p>
-    </div>
+<button class="primary-btn demo-btn">Login</button>
 
-  </div>
+<p class="forgot">Password recovery not available</p>
+</div>
 
+</div>
 </main>
+<p align="center" style="text-align:center;color:#b00020;font-weight:600;">⚠ This is a DEMO login page. Inputs are not saved or sent anywhere.</p>
+<script>
+document.querySelectorAll(".demo-btn").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    alert("Demo only 🚫\nNo data is collected, stored, or transmitted.");
+  });
+});
+</script>
 
-    </body>
+</body>
 </html>
